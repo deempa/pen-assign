@@ -10,7 +10,9 @@ Before you begin, ensure you have the following prerequisites:
 
 - **Terraform Installed:** Download and install Terraform from [Terraform Downloads](https://www.terraform.io/downloads.html).
 
+- **AWS CLI Installed:** Download and install AWS CLI tool [AWS docs](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 - **AWS Credentials:** Set up AWS credentials with the necessary permissions. Configure credentials using the AWS CLI (`aws configure`) or environment variables.
+
 
 ## Step-by-step Instructions
 
