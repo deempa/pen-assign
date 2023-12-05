@@ -62,7 +62,7 @@ Before you begin, ensure you have the following prerequisites:
 10. **View Outputs:**
     - Retrieve public IPs and PEM content:
       ```bash
-      terraform output
+      terraform output ec2s_public_ips
       terraform output key_pairs_pem
       ```
 
@@ -75,4 +75,15 @@ Before you begin, ensure you have the following prerequisites:
 12. **Remote Desktop Connection:**
     - Use a remote desktop client to connect to the EC2 instance.
 
-For additional details and troubleshooting, refer to the official [Terraform Documentation](https://www.terraform.io/docs/index.html) and [AWS Documentation](https://docs.aws.amazon.com/).
+
+## Additional Information
+
+- **Windows 10 AMI:** To use a Windows 10 AMI, you can either upload a VHD image of Windows 10 to an S3 bucket and create an AMI from it (considering licensing), or utilize Amazon Workspaces.
+
+- **Network:** Deploying only one public subnet and zero private subnets is a cost-effective decision for a test environment, avoiding additional costs associated with NAT Gateway.
+
+- **Modules:** The project employs various modules to enhance code cleanliness and eliminate redundancy. These modules adhere to high standards maintained by their respective owners.
+
+- **State File:** While the best practice is to store the state file in a backend (e.g., S3 bucket), for this project, it is saved locally within the folder.
+
+- **Tfvars:** Normally, tfvars should not be saved in the Git repo. For the purpose of this exam, the gitignore for this file has been removed, and it will be uploaded to the Git repo.
