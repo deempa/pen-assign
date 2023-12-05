@@ -75,6 +75,13 @@ Before you begin, ensure you have the following prerequisites:
 12. **Remote Desktop Connection:**
     - Use a remote desktop client to connect to the EC2 instance.
 
+13. **Delete Envs:** 
+    - Run:
+    ```bash
+    terraform destroy
+    ```
+    Type 'yes' when prompted. This will destroy all the resources we deployed earlier.
+
 
 ## Additional Information
 
